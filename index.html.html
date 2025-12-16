@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vitrine - Bellaida Nutritionnel</title>
+  <meta name="description" content="Vitrine virtuelle professionnelle">
+  <style>
+    :root{
+      --bg:#f7f7fb;
+      --card:#ffffff;
+      --accent:#0b74de;
+      --muted:#6b7280;
+      --radius:14px;
+      --maxw:1100px;
+      --gap:24px;
+      --shadow:0 10px 30px rgba(12,18,28,0.08);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:var(--maxw);margin:40px auto;padding:0 20px}
+
+    /* Header */
+    .logo-img{width:56px;height:56px;border-radius:12px;object-fit:cover;}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px;border-radius:16px;background:linear-gradient(90deg, rgba(11,116,222,0.08), rgba(11,116,222,0));box-shadow:var(--shadow)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6cc1ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:var(--gap);align-items:center;margin-top:28px}
+    .hero .left h1{font-size:34px;margin:0 0 12px}
+    .hero .left p{color:var(--muted);margin:0 0 18px}
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .feature{background:var(--card);padding:12px;border-radius:12px;box-shadow:var(--shadow);min-width:140px}
+
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+
+    /* Services / portfolio */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+    .portfolio-item{min-height:160px;border-radius:10px;overflow:hidden;background:linear-gradient(135deg, #fff, #f4f7fb);display:flex;flex-direction:column}
+    .portfolio-item img{width:100%;height:auto;max-height:320px;object-fit:contain;padding:6px;background:#fff;border-radius:6px} 
+    .portfolio-item h4{margin:10px;padding:0 12px}
+
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+    form label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input,textarea,button{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8;font-size:14px}
+    textarea{min-height:140px;resize:vertical}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px;padding:18px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .contact{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:column;gap:12px;align-items:flex-start}
+    }
+  .pack-img{width:100%;height:auto;max-height:280px;object-fit:contain;border-radius:8px;background:#fff;padding:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="logo jaspe.png" alt="Logo" class="logo-img">
+        <div>
+          <div style="font-weight:700">Bellaida Nutritionnel</div>
+          <div style="font-size:13px;color:var(--muted)">Vente de bouillie naturelle et artisanale</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="https://wa.me/243974279693?text=Bonjour%20je%20veux%20commander">Contact</a>
+        <a class="cta" href="#contact">Commander</a>
+      </nav>
+    </header>
+
+    <section class="hero" style="background-image: url('IMG-20250919-WA0017.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center top; min-height:420px; color:#fff; padding:60px; border-radius:12px">
+      <div class="left" style="background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.35));backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px), rgba(0,0,0,0.35));padding:40px;border-radius:12px;text-align:center;max-width:600px;margin:auto">
+        <h1 style="color:#fff">La meilleure bouillie naturelle, fraîchement préparée chaque jour</h1>
+        <p style="color:rgba(255,255,255,0.9)">Découvrez nos bouillies 100% naturelles : maïs, soja, arachide, riz — adaptées aux enfants, adultes et à la nutrition sportive.</p>
+        <div class="features" style="margin-top:14px;justify-content:center">
+          <div class="feature" style="background:rgba(255,255,255,0.06);color:#fff">100% naturel</div>
+          <div class="feature" style="background:rgba(255,255,255,0.06);color:#fff">Riche en nutriments</div>
+          <div class="feature" style="background:rgba(255,255,255,0.06);color:#fff">Livraison disponible</div>
+        </div>
+        <div style="margin-top:18px;display:flex;justify-content:center;gap:12px">
+          <a href="#offres" class="cta">Voir nos offres</a>
+          <a href="https://wa.me/243974279693?text=Bonjour%20je%20veux%20commander%20Bellaida" class="cta" style="background:#25D366;margin-left:10px">Commander via WhatsApp</a>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card" style="background:rgba(255,255,255,0.95);color:#0f172a">
+          <h3>Contact & Adresse</h3>
+          <p style="color:var(--muted)">WhatsApp : 0974 279 693<br>Adresse : Avenue Sandoa, Commune de Kasa-Vubu, Direction Gambela, Ville de Kinshasa, RDC</p>
+          <p style="margin-top:8px;font-weight:700;color:var(--accent)">Livraison moyenne : 30–60 minutes</p>
+        </div>
+
+        <div style="height:18px"></div>
+        <div class="card">
+          <h4>Témoignage client</h4>
+          <p style="color:var(--muted);margin:6px 0">"Excellent goût et très nutritif — ma famille adore Bellaïda."</p>
+          <small style="color:var(--muted)">— Client fidèle</small>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services" style="margin-top:26px">
+      <h2>Nos produits</h2>
+      <div class="grid">
+        <!-- Nouveau produit 100g -->
+        <div class="portfolio-item card" style="text-align:center">
+          <img src="freepik_br_e059c8bf-f2cf-45da-9498-abb9149dfb5c.png" style="width:100%;height:auto;object-fit:contain;padding:6px;background:#fff;border-radius:6px">
+          <h4>Bellaïda Nutritionnel – 100g</h4>
+          <p>Petit sachet pratique pour une portion individuelle.</p>
+          <p style="font-weight:700;color:#0b74de">Prix : 1 500 CDF</p>
+          <a href="https://wa.me/243974279693?text=Je%20veux%20commander%20100g%20Bellaida%201500CDF" class="cta">Commander maintenant</a>
+        </div>
+
+        <!-- Nouveau produit 500g -->
+        <div class="portfolio-item card" style="text-align:center">
+          <img src="13c82177-2d9c-4a7e-addf-363783ac7b96.png" style="width:100%;height:auto;object-fit:contain;padding:6px;background:#fff;border-radius:6px">
+          <h4>Bellaïda Nutritionnel – 1kg</h4>
+          <p>Format économique et pratique pour la consommation quotidienne.</p>
+          <p style="font-weight:700;color:#0b74de">Prix : 16 500 CDF</p>
+          <a href="https://wa.me/243974279693?text=Je%20veux%20commander%20500g%20Bellaida%209000CDF" class="cta">Commander maintenant</a>
+        </div>
+        </div>
+        <!-- Section Témoignages clients -->
+    <section id="temoignages" style="margin-top:32px">
+      <h2>Témoignages Clients</h2>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:18px;margin-top:16px">
+        <div class="card" style="text-align:center;padding:20px">
+          <p style="font-style:italic;color:var(--muted)">“Bellaïda est vraiment nutritif, mes enfants l’adorent !”</p>
+          <strong>— Maman Grâce</strong>
+        </div>
+        <div class="card" style="text-align:center;padding:20px">
+          <p style="font-style:italic;color:var(--muted)">“J'ai pris vraiment du poids, merci pour votre sincérité ❤️”</p>
+          <strong>— Ya La Joie</strong>
+        </div>
+        <div class="card" style="text-align:center;padding:20px">
+          <p style="font-style:italic;color:var(--muted)">“À la fin de cette semaine je veux encore vous appeler pour ça.”</p>
+          <strong>— Ya La Joie</strong>
+        </div>
+        <div class="card" style="text-align:center;padding:20px">
+          <p style="font-style:italic;color:var(--muted)">“Bellaïda est vraiment nutritif, mes enfants l’adorent !”</p>
+          <strong>— Maman Grâce</strong>
+        </div>
+        <div class="card" style="text-align:center;padding:20px">
+          <p style="font-style:italic;color:var(--muted)">“Très bon goût, naturel et facile à préparer. Je recommande !”</p>
+          <strong>— Patient M.</strong>
+        </div>
+        <div class="card" style="text-align:center;padding:20px">
+          <p style="font-style:italic;color:var(--muted)">“La bouillie m’a aidé à reprendre du poids sainement.”</p>
+          <strong>— Déo K.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nouvelle section Cosmétique -->
+    <section id="cosmetique" style="margin-top:26px">
+      <h2>Produits cosmétiques</h2>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px">
+        <div class="portfolio-item card" style="text-align:center">
+          <img src="01da3b42-1db8-486d-b53f-d3b10a72ea1b.png" style="width:100%;height:auto;object-fit:contain;padding:6px;background:#fff;border-radius:6px">
+          <h4>Savon BELGOM – Anti-bouton</h4>
+          <p>Éclaircissant, anti-bouton, 100% naturel.</p>
+          <p style="font-weight:700;color:#0b74de">Prix : 8 000 CDF</p>
+          <a href="https://wa.me/243974279693?text=Je%20veux%20commander%20le%20savon%20BELGOM%208000CDF" class="cta">Commander maintenant</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Livraison -->
+    <section id="livraison" style="margin-top:26px">
+      <h2>Livraison</h2>
+      <div class="card" style="margin-top:12px">
+        <p style="color:var(--muted)">Nous proposons un service de livraison rapide et fiable pour vous permettre de recevoir votre bouillie Bellaïda Nutritionnel où que vous soyez. Commandez facilement par téléphone ou via notre formulaire de contact et bénéficiez d’une livraison sécurisée, hygiénique et ponctuelle.</p>
+        <ul style="color:var(--muted);padding-left:18px;margin-top:10px">
+          <li>Livraison disponible dans plusieurs quartiers</li>
+          <li>Délai moyen : 3 à 24 heures</li>
+          <li>Frais de livraison selon la distance</li>
+          <li>Commande minimum : 1 portion</li>
+        </ul>
+        <p style="margin-top:10px;font-weight:700;color:#0b74de">Contact pour livraison : 0974 279 693</p>
+      </div>
+    </section>
+
+    
+
+    
+
+    <section id="contact" style="margin-top:26px">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="card">
+          <h3>Passer une commande</h3>
+          <form action="mailto:contact@entreprise.com" method="post" enctype="text/plain">
+            <label>Nom complet</label>
+            <input type="text" name="nom" placeholder="Votre nom complet" required>
+
+            <label>Adresse email</label>
+            <input type="email" name="email" placeholder="votre@email.com" required>
+
+            <label>Adresse physique</label>
+            <input type="text" name="adresse_physique" placeholder="Votre adresse complète" required>
+
+            <label>Téléphone</label>
+            <input type="tel" name="telephone" placeholder="Votre numéro de téléphone" required>
+
+            <label>Quantité</label>
+            <input type="number" name="quantite" placeholder="Ex.: 5" min="1" required>
+
+            <label>Commande</label>
+            <textarea name="commande" placeholder="Détails de la commande..." required></textarea>
+
+            <div style="margin-top:10px">
+              <button type="submit">Envoyer la commande</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Infos</h3>
+          <p style="color:var(--muted)">Adresse: Avenue Sandoa, Commune de Kasa-Vubu, Direction Gambela, Ville de Kinshasa, RDC</p>
+          <p style="color:var(--muted)">Horaires: Lun-Ven 8:30 - 17:30</p>
+          <div style="margin-top:12px">
+            <strong>Suivez-nous</strong>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <a href="#">Facebook</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Bellaida Nutritionnel — Tous droits réservés
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <!-- Bouton WhatsApp flottant -->
+  <a href="https://wa.me/243974279693?text=Bonjour%20je%20veux%20commander%20Bellaida" 
+     style="position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; padding:14px 18px; border-radius:50%; font-size:22px; text-decoration:none; box-shadow:0 4px 12px rgba(0,0,0,0.25); z-index:999; display:flex; align-items:center; justify-content:center;">
+    ☎
+  </a>
+</body>
+</html>
